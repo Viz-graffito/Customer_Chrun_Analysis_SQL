@@ -83,11 +83,9 @@ select
 '2017-03-01' as 'first_day',
 '2017-03-31' as 'last-day'
 ),
-
 cross_join AS -- 2nd
 (SELECT * FROM codeflix
 CROSS JOIN months),
-
 status as  -- 3rd
 (select id, first_day AS month,
 Case when
@@ -123,11 +121,9 @@ select
 '2017-03-01' as 'first_day',
 '2017-03-31' as 'last_day'
 ),
-
 cross_join AS -- 2
 (SELECT * FROM codeflix
 CROSS JOIN months),
-
 status as -- 3
 (select id, first_day AS month,
 Case when
@@ -176,7 +172,6 @@ select
 cross_join AS -- 2 
 (SELECT * FROM codeflix
 CROSS JOIN months),
-
 status as -- 3 
 (select id, first_day AS month,
 Case when
@@ -231,7 +226,6 @@ select
 cross_join AS
 (SELECT * FROM codeflix
 CROSS JOIN months),
-
 status as 
 (select id, first_day AS month,
 Case when
